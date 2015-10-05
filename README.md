@@ -1,2 +1,2 @@
-# RockPaperScissorsWithPython
-A basic example of how to use Python to solve a well known problem: How to play Rock, Paper, Scissors. 
+# Rock Paper Scissors With Python
+A basic example of how to use Python to solve a well known problem: How to play Rock, Paper, Scissors. I used it as an introductory exercise in programming for students in a 100 level informatics class. It's an example of using variables, functions and lists to accomplish a task. It is also a good way to introduce the idea that there are many paths to solve the problem.
