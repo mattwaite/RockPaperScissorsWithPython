@@ -13,20 +13,16 @@ def choice():
 # Third, we need a means to determine a winner. However, there's a lot of different things that can go on based on the combination. This is a simple, brute force way to do it. There are others.
     
 def winner(player1, player2):
-    if player1 == "Rock" and player2 == "Rock":
-        result = "Tie"
+    if player1 == player2:
+        return "Tie"
     elif player1 == "Rock" and player2 == "Paper":
         result = "Player 2 wins"
     elif player1 == "Rock" and player2 == "Scissors":
         result = "Player 1 wins"
-    elif player1 == "Paper" and player2 == "Paper":
-        result = "Tie"
     elif player1 == "Paper" and player2 == "Rock":
         result = "Player 1 wins"
     elif player1 == "Paper" and player2 == "Scissors":
         result = "Player 2 wins"
-    elif player1 == "Scissors" and player2 == "Scissors":
-        result = "Tie"
     elif player1 == "Scissors" and player2 == "Rock":
         result = "Player 2 wins"
     elif player1 == "Scissors" and player2 == "Paper":
@@ -49,10 +45,10 @@ while player_1_wins != 2 and player_2_wins != 2:
     print winr
     # Here's where we'll overwrite the counts of the wins to determine best two of three
     if winr == "Player 1 wins":
-        player_1_wins = player_1_wins + 1
+        player_1_wins += 1
         print "Player 1 total wins: %i" % player_1_wins
     elif winr == "Player 2 wins":
-        player_2_wins = player_2_wins + 1 
+        player_2_wins += 1 
         print "Player 2 total wins: %i" % player_2_wins
     else:
         pass
